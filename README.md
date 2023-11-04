@@ -53,6 +53,6 @@
 2. build a docker image by following a command
     * docker build -t demmand_service . *
 3. to run a image
-    * docker run -p 9000:9000 demmand_service*    
+    * docker run -p 8080:8080 demmand_service*    
 
 ```
