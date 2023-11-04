@@ -29,7 +29,7 @@ func CreateAdSpace(db *gorm.DB, AdSpace *AdSpace) (err error) {
 
 // get ad space
 func GetAdSpaces(db *gorm.DB, adSpace *[]AdSpace) (err error) {
-	err = db.Find(&adSpace).Error
+	err = db.Where("status='open'").Find(&adSpace).Error
 	return
 }
 
